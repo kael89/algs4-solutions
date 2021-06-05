@@ -1,0 +1,6 @@
+#!/bin/bash
+
+exercise_id=$(echo $1 | sed -e 's/[\.\-_]/_/g')
+exercise="Exercise${exercise_id}"
+echo "Exercise $1"
+javac-algs4 "${exercise}.java" && java-algs4 $exercise
