@@ -972,6 +972,7 @@
         <!-- type name -->
         <!-- ^[A-Z][a-zA-Z0-9]*$ -->
         <module name="TypeName">
+            <property name="format" value="^[A-Z][a-zA-Z0-9_]*$"/>
             <message key="name.invalidPattern" value="The class ''{0}'' must start with an uppercase letter and use CamelCase."/>
         </module>
 
