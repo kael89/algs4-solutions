@@ -231,13 +231,13 @@
             <property name="tokens" value="LITERAL_DO"/>
         </module>
 
-<!-- 
+<!--
         <module name="EmptyBlock">
             <property name="option" value="text"/>
             <message key="block.noStmt" value="A block must have at least one statement."/>
         </module>
 
-        <module name="LeftCurly"/> 
+        <module name="LeftCurly"/>
         <module name="RightCurly"/>
 -->
 
@@ -867,6 +867,10 @@
             <message key="type.file.mismatch" value="The name of the outer type and the file do not match. For example, the class Point must be in a file named Point.java."/>
         </module>
 
+        <module name="Indentation">
+            <property name="basicOffset" value="2"/>
+        </module>
+
 <!--
         <module name="UncommentedMain"/>
         <module name="FinalParameters"/>
@@ -927,7 +931,7 @@
         <module name="LocalFinalVariableName">
             <property name="format" value="^([a-z][a-zA-Z0-9]*|[A-Z][A-Z_0-9]*)$"/>
             <message key="name.invalidPattern" value="The local final variable ''{0}'' must start with a lowercase letter and use camelCase (or be ALL_UPPERCASE if it is a constant)."/>
-        </module>  
+        </module>
 
         <!-- local variables must be camelCase or G (for graphs) -->
         <module name="LocalVariableName">
@@ -1031,6 +1035,20 @@
         <!-- https://checkstyle.sourceforge.io/config_regexp.html                        -->
         <!-- =========================================================================== -->
 
+        <!-- Checks for trailing whitespace. -->
+        <module name="RegexpSinglelineJava">
+            <property name="id" value="TrailingWhitespace"/>
+            <property name="format" value="[ \t]+$"/>
+            <property name="message" value="Trailing whitespace"/>
+        </module>
+
+        <!-- Checks for trailing whitespace. -->
+        <module name="RegexpSinglelineJava">
+            <property name="id" value="TrailingWhitespace"/>
+            <property name="format" value="[ \t]+$"/>
+            <property name="message" value="Trailing whitespace"/>
+        </module>
+
         <!-- Checks for useless calls to StdRandom.uniform(1) or StdRandom.uniform(0, 1) -->
         <module name="RegexpSinglelineJava">
             <property name="id" value="AlwaysReturnsZero"/>
@@ -1127,7 +1145,7 @@
            <!-- removed PLUS, MINUS, STAR, DIV -->
            <!-- removed GENERIC_START, GENERIC_END -->
            <property name="tokens"
-            value="ASSIGN, BAND, BAND_ASSIGN, BOR, BOR_ASSIGN, BSR, 
+            value="ASSIGN, BAND, BAND_ASSIGN, BOR, BOR_ASSIGN, BSR,
                    BSR_ASSIGN, BXOR, BXOR_ASSIGN, COLON,  DIV_ASSIGN,
                    EQUAL, GE, GT, LAND, LCURLY, LE, LITERAL_ASSERT,
                    LITERAL_CATCH, LITERAL_DO, LITERAL_ELSE, LITERAL_FINALLY,
@@ -1136,6 +1154,10 @@
                    MOD_ASSIGN, NOT_EQUAL, PLUS_ASSIGN, QUESTION, RCURLY,
                    SL, SLIST, SL_ASSIGN, SR, SR_ASSIGN, STAR_ASSIGN,
                    TYPE_EXTENSION_AND"/>
+        </module>
+
+        <module name="EmptyLineSeparator">
+            <property name="allowMultipleEmptyLines" value="false"/>
         </module>
 
         <!-- seems buggy if used with class in default package. seems to need VARIABLE_DEF for it to behave properly? -->
