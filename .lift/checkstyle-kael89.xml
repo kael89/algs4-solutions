@@ -1199,16 +1199,6 @@
         <!-- COURSE SPECIFIC CHECKS                                                      -->
         <!-- =========================================================================== -->
 
-        <!-- Don't allow suppressing of compiler warnings. -->
-        <module name="SuppressWarnings">
-            <property name="severity" value="error"/>
-            <property name="format" value=".*"/>
-            <property name="tokens"
-                     value="CLASS_DEF,INTERFACE_DEF,ENUM_DEF,ANNOTATION_DEF,ANNOTATION_FIELD_DEF,
-                            ENUM_CONSTANT_DEF,METHOD_DEF,CTOR_DEF,PARAMETER_DEF,VARIABLE_DEF"/>
-            <message key="suppressed.warning.not.allowed" value="Do not suppress warnings in this course."/>
-        </module>
-
         <!-- no implementation inheritance -->
         <module name="IllegalToken">
             <property name="tokens" value="EXTENDS_CLAUSE"/>
