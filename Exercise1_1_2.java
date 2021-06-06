@@ -10,11 +10,13 @@
  *  d. 1 + 2 + "3"
  **************************************************************************** */
 
+import edu.princeton.cs.algs4.StdOut;
+
 public class Exercise1_1_2 {
   public static void main(String[] args) {
-    System.out.println((1 + 2.236) / 2); // float, 1.618
-    System.out.println(1 + 2 + 3 + 4.0); // float, 10.0
-    System.out.println(4.1 >= 4); // boolean, true
-    System.out.println(1 + 2 + "3"); // string, "33"
+    StdOut.println((1 + 2.236) / 2); // float, 1.618
+    StdOut.println(1 + 2 + 3 + 4.0); // float, 10.0
+    StdOut.println(4.1 >= 4); // boolean, true
+    StdOut.println(1 + 2 + "3"); // string, "33"
   }
 }
