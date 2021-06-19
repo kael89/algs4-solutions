@@ -7,6 +7,8 @@
  *  of a two-dimensional array with M rows and N columns.
  **************************************************************************** */
 
+package chapter1.section1;
+
 import edu.princeton.cs.algs4.StdArrayIO;
 
 public class Exercise1_1_13 {

@@ -8,34 +8,36 @@
  *  numbers.
  *   **************************************************************************** */
 
+package chapter1.section1;
+
 import edu.princeton.cs.algs4.StdOut;
 
 public class Exercise1_1_11 {
   private static boolean[][] booleans = {
-          {true, false, false, true},
-          {true, false, false, true},
-          {false, false, false, true},
-          {true, true, true, true},
-          {false, false, false, false},
+      {true, false, false, true},
+      {true, false, false, true},
+      {false, false, false, true},
+      {true, true, true, true},
+      {false, false, false, false},
   };
 
   private static boolean[][] booleansLongRow = {
-          {true, false, false, true, false, false, false, false, true, true},
+      {true, false, false, true, false, false, false, false, true, true},
   };
 
   private static boolean[][] booleansLongColumn = {
-          {true},
-          {true},
-          {false},
-          {true},
-          {false},
-          {false},
-          {false},
-          {false},
-          {true},
-          {true},
-          {false},
-          {true},
+      {true},
+      {true},
+      {false},
+      {true},
+      {false},
+      {false},
+      {false},
+      {false},
+      {true},
+      {true},
+      {false},
+      {true},
   };
 
   private static int countDigits(int a) {

@@ -7,6 +7,8 @@
  *  into a String s.
  **************************************************************************** */
 
+package chapter1.section1;
+
 import edu.princeton.cs.algs4.StdIn;
 import edu.princeton.cs.algs4.StdOut;
 

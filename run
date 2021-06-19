@@ -1,7 +1,18 @@
 #!/bin/bash
 
-exercise_id=$(echo $1 | sed -e 's/[\.\-_]/_/g')
-exercise="Exercise${exercise_id}"
-echo "Exercise $1"
+set -e
+
+chapter=$1
+section=$2
+exercise=$3
 shift
-javac-algs4 "${exercise}.java" && java-algs4 $exercise "$@"
+shift
+shift
+
+exercise_file="Exercise${chapter}_${section}_$exercise"
+folder="chapter$chapter/section$section"
+
+echo "Exercise ${chapter}.${section}.$exercise"
+cd src
+javac-algs4 "$folder/${exercise_file}.java" && java-algs4 "$folder/${exercise_file}" "$@"
+cd ../

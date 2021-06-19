@@ -1235,12 +1235,6 @@
 -->
         <module name="IllegalToken">
             <property name="severity" value="error"/>
-            <property name="tokens" value="PACKAGE_DEF"/>
-            <message key="illegal.token" value="Do not define packages in this course. You must use the default (no-name) package in this course."/>
-        </module>
-
-        <module name="IllegalToken">
-            <property name="severity" value="error"/>
             <property name="tokens" value="LITERAL_NATIVE, STRICTFP, LITERAL_VOLATILE, LITERAL_TRANSIENT"/>
             <message key="illegal.token" value="Do not use the keyword ''{0}'' in this course."/>
         </module>

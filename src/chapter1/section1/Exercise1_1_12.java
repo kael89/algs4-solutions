@@ -12,6 +12,8 @@
  *    System.out.println(i);
  **************************************************************************** */
 
+package chapter1.section1;
+
 public class Exercise1_1_12 {
   public static void main(String[] args) {
     // Answer: all the integers in [0, 9] in ascending order

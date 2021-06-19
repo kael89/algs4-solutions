@@ -10,6 +10,8 @@
  *  d. if (a > b) c = 0 else b = 0;
  **************************************************************************** */
 
+package chapter1.section1;
+
 public class Exercise1_1_4 {
   public static void main(String[] args) {
     // a. `then` is invalid syntax in Java

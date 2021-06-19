@@ -10,6 +10,8 @@
  *  Use your program to compute the greatest common divisor or 1111111 and 1234567.
  **************************************************************************** */
 
+package chapter1.section1;
+
 import edu.princeton.cs.algs4.StdIn;
 import edu.princeton.cs.algs4.StdOut;
 

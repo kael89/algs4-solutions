@@ -7,6 +7,8 @@
  *  strictly between 0 and 1 and false otherwise.
  **************************************************************************** */
 
+package chapter1.section1;
+
 import edu.princeton.cs.algs4.StdIn;
 import edu.princeton.cs.algs4.StdOut;
 

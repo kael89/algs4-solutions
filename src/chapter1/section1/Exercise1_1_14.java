@@ -7,6 +7,8 @@
  *  the largest int not larger than the base-2 logarithm of N. Do not use Math.
  **************************************************************************** */
 
+package chapter1.section1;
+
 import edu.princeton.cs.algs4.StdIn;
 import edu.princeton.cs.algs4.StdOut;
 

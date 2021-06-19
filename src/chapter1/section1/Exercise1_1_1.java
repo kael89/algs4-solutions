@@ -9,6 +9,8 @@
  *  c. true && false || true && true
  **************************************************************************** */
 
+package chapter1.section1;
+
 import edu.princeton.cs.algs4.StdOut;
 
 public class Exercise1_1_1 {
