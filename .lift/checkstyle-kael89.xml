@@ -281,12 +281,6 @@
             <message key="empty.statement" value="Are you sure you want an empty statement here? An empty statement might indicate a superfluous semicolon."/>
         </module>
 
-        <module name="HiddenField">
-            <property name="ignoreConstructorParameter" value="true"/>
-            <property name="ignoreSetter" value="true"/>
-            <message key="hidden.field" value="The local (or parameter) variable ''{0}'' has the same name as an instance variable. Use a different name."/>
-        </module>
-
         <module name="InnerAssignment"/>
         <module name="ModifiedControlVariable">
             <message key="modified.control.variable" value="Control variable ''{0}'' is modified inside loop."/>
