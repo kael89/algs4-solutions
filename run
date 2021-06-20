@@ -2,17 +2,27 @@
 
 set -e
 
-chapter=$1
-section=$2
-exercise=$3
+SOURCE=src
+TARGET=target
+LIFT_LIB=".lift/algs4.jar"
+
+chapterId=$1
+sectionId=$2
+exerciseId=$3
 shift
 shift
 shift
 
-exercise_file="Exercise${chapter}_${section}_$exercise"
-folder="chapter$chapter/section$section"
+exercise="Exercise${chapterId}_${sectionId}_$exerciseId"
+folder="chapter$chapterId/section$sectionId"
 
-echo "Exercise ${chapter}.${section}.$exercise"
-cd src
-javac-algs4 "$folder/${exercise_file}.java" && java-algs4 "$folder/${exercise_file}" "$@"
-cd ../
+javac-algs4 -sourcepath $SOURCE "$SOURCE/$folder/${exercise}.java" -d $TARGET
+
+java="java"
+if [ -f /usr/libexec/java_home ]; then
+  # Use different command on OS X
+  java="/usr/libexec/java_home -exec java"
+fi
+
+echo "Exercise ${chapterId}.${sectionId}.$exerciseId"
+$java -cp "$TARGET:$LIFT_LIB" "$folder/${exercise}" "$@"
