@@ -51,8 +51,7 @@ public class Exercise1_3_4 {
   }
 
   private static class Parenthesis {
-
-    private static ArrayList<Character> leftChars = new ArrayList<Character>() {
+    private static final ArrayList<Character> LEFT_PARENS = new ArrayList<Character>() {
       {
         add('(');
         add('{');
@@ -60,7 +59,7 @@ public class Exercise1_3_4 {
       }
     };
 
-    private static ArrayList<Character> rightChars = new ArrayList<Character>() {
+    private static final ArrayList<Character> RIGHT_PARENS = new ArrayList<Character>() {
       {
         add(')');
         add('}');
@@ -69,10 +68,10 @@ public class Exercise1_3_4 {
     };
 
     public static Type getType(char c) {
-      if (leftChars.contains(c)) {
+      if (LEFT_PARENS.contains(c)) {
         return Type.LEFT;
       }
-      if (rightChars.contains(c)) {
+      if (RIGHT_PARENS.contains(c)) {
         return Type.RIGHT;
       }
       return null;
@@ -83,8 +82,8 @@ public class Exercise1_3_4 {
       char left = (char) Math.min(a, b);
       char right = (char) Math.max(a, b);
 
-      int leftIndex = leftChars.indexOf(left);
-      int rightIndex = rightChars.indexOf(right);
+      int leftIndex = LEFT_PARENS.indexOf(left);
+      int rightIndex = RIGHT_PARENS.indexOf(right);
       return leftIndex != -1 && leftIndex == rightIndex;
     }
 
