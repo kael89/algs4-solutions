@@ -1249,7 +1249,7 @@
 
         <module name="IllegalToken">
             <property name="severity" value="error"/>
-            <property name="tokens" value="LITERAL_THROWS, LITERAL_SUPER, LITERAL_PROTECTED, ABSTRACT"/>
+            <property name="tokens" value="LITERAL_THROWS, LITERAL_SUPER, ABSTRACT"/>
             <message key="illegal.token" value="Do not use the keyword ''{0}'' in this course."/>
         </module>
 
