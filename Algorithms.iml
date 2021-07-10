@@ -13,6 +13,7 @@
       <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/.idea" />
       <excludeFolder url="file://$MODULE_DIR$/.lift" />
+      <excludeFolder url="file://$MODULE_DIR$/target" />
       <excludePattern pattern="*.iml" />
       <excludePattern pattern="*.class" />
     </content>
