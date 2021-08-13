@@ -1194,19 +1194,6 @@
         <!-- COURSE SPECIFIC CHECKS                                                      -->
         <!-- =========================================================================== -->
 
-        <!-- no implementation inheritance -->
-        <module name="IllegalToken">
-            <property name="tokens" value="EXTENDS_CLAUSE"/>
-            <message key="illegal.token" value="Do not use implementation inheritance in this course."/>
-        </module>
-
-        <!-- type upper or lower bounds -->
-        <module name="IllegalToken">
-            <property name="id" value="TypeParameter"/>
-            <property name="tokens" value="TYPE_UPPER_BOUNDS, TYPE_LOWER_BOUNDS, TYPE_EXTENSION_AND"/>
-            <message key="illegal.token" value="You should not need to use type upper or lower bounds in this course."/>
-        </module>
-
         <!-- wildcard types -->
         <module name="IllegalToken">
             <property name="id" value="TypeParameter"/>
@@ -1244,12 +1231,6 @@
             <property name="id" value="Synchronized"/>
             <property name="severity" value="error"/>
             <property name="tokens" value="LITERAL_SYNCHRONIZED"/>
-            <message key="illegal.token" value="Do not use the keyword ''{0}'' in this course."/>
-        </module>
-
-        <module name="IllegalToken">
-            <property name="severity" value="error"/>
-            <property name="tokens" value="LITERAL_THROWS, LITERAL_SUPER, ABSTRACT"/>
             <message key="illegal.token" value="Do not use the keyword ''{0}'' in this course."/>
         </module>
 

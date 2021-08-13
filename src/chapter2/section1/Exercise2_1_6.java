@@ -22,8 +22,8 @@ public class Exercise2_1_6 {
     // (as always - array accesses in selection sort are independent of the element arrangement)
     //
     // Insertion sort will execute
-    // - 0 exchanges
     // - n - 1 compares
+    // - 0 exchanges
     // Total: 2 * (n - 1) accesses
     //
     // Thus, insertion sort will be much faster than selection sort in this case.
